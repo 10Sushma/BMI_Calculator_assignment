@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI_Calculator_assignment</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+
+<body>
+    <h1>BMI_Calculator</h1>
+    <form class="form" id="form" onsubmit="calculator()">
+
+        <div class="row-one">
+            <p class="text">Age</p> <input type="number" id="age" class="text-input" min="2" max="120" required />
+            <p class="text">Ages 2-120</p>
+        </div>
+        <div class="row-two">
+            <p clas="text"> Gender</p>
+            <label class="container">
+                <input type="radio" name="radio" id="f">
+                <p class="text"> Female</p>
+            
+            </label>
+            <label class="container">
+                <input type="radio" name="radio" id="m">
+                <p class="text"> Male</p>
+            
+            </label>
+        </div>
+        <div class="row-three">
+            <p class="text">height</p> <input type="number" class="text-input" placeholder="cm" id="height" required />
+        </div>
+        <div class="row-four">
+            <p class="text">weight</p> <input type="number" class="text-input" placeholder="kg" id="weight" required />
+        </div>
+        <div class="row-five">
+        <button type="button" class="submit" id="submit">calculate</button>
+        <button type="button" class="submit" onclick="clear()">clear</button>
+    </div>
+    </form>
+    <script type="text/javascript" src="bmi.js"></script>
+</body>
+
+</html>
